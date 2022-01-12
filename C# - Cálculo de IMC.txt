@@ -1,0 +1,23 @@
+float peso = 0;
+float altura = 0;
+float IMC = 0;
+
+Console.WriteLine("Informe o seu peso (em KG): ");
+peso = float.Parse(Console.ReadLine());
+
+Console.WriteLine("Informe sua altura (em Metros): ");
+altura = float.Parse(Console.ReadLine());
+
+IMC = peso / (altura * altura);
+
+if (IMC < 18.5)
+
+    Console.WriteLine("Seu IMC é {0} e você está ABAIXO DO PESO.", IMC);
+
+else if (IMC < 24.9)
+
+    Console.WriteLine("Seu IMC é {0} e você está com o PESO IDEAL.", IMC);
+
+if (IMC >= 24.9)
+
+    Console.WriteLine("Seu IMC é {0} e você está ACIMA DO PESO.", IMC);
